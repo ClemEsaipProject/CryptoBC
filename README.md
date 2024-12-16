@@ -1,48 +1,42 @@
-**Projet Blockchain**
+# **Projet Blockchain**
 *Description*
-Ce projet implémente une blockchain simple en Python. Il permet de créer des transactions, de les vérifier, de les afficher, d'altérer des blocs et de valider la chaîne de blocs. Chaque fois que 10 transactions sont ajoutées, un nouveau bloc est créé dans la chaîne.
-**Fonctionnalités**
+Ce projet implémente une blockchain simple en Python. 
+Il permet de créer des transactions, de les vérifier, de les afficher, d'altérer des blocs et de valider la chaîne de blocs.
+ Chaque fois que 10 transactions sont ajoutées, un nouveau bloc est créé dans la chaîne.
+# **Fonctionnalités**
 Ajouter une transaction : Permet d'ajouter une nouvelle transaction à la blockchain.
 Vérifier une transaction : Vérifie l'existence d'une transaction dans la blockchain en utilisant son ID.
 Afficher les 10 dernières transactions : Affiche les 10 dernières transactions ajoutées à la blockchain.
 Altérer un bloc : Permet d'altérer une transaction existante dans un bloc.
 Valider la blockchain : Vérifie l'intégrité de la blockchain et s'assure qu'aucun bloc n'a été altéré.
-Prérequis
+# *Prérequis*
 Python 3.x
 Aucune bibliothèque externe n'est nécessaire pour ce projet.
-Installation
+# Installation
 Clonez le dépôt :
-bash
-git clone https://github.com/votre-utilisateur/blockchain-project.git
-cd blockchain-project
-(Facultatif) Créez un environnement virtuel :
-bash
-# Création de l'environnement virtuel
-python -m venv venv
+``git clone https://github.com/votre-utilisateur/blockchain-project.git
+cd blockchain-project``
 
-# Activation de l'environnement virtuel
-# Sur macOS/Linux
-source venv/bin/activate
-# Sur Windows
-venv\Scripts\activate
-Installez les dépendances (si nécessaire) :
-bash
+(Facultatif) Créez un environnement virtuel :
+Création de l'environnement virtuel
+``python -m venv venv``
+
+
 # Installation des dépendances
-pip install -r requirements.txt
-Utilisation
+``pip install -r requirements.txt``
+
+# Utilisation
 Exécutez le programme principal :
-bash
-python main.py
+``python main.py``
 Suivez les instructions à l'écran pour interagir avec la blockchain.
-Structure du projet
-text
+
+*Structure du projet*
+```
 blockchain-project/
 │
 ├── main.py            # Point d'entrée du programme
 ├── blockchain.py      # Classe Blockchain et gestion des blocs
 ├── block.py           # Classe Block pour gérer les blocs individuels
 └── transaction.py     # Classe Transaction pour gérer les transactions
-Contribution
-Les contributions sont les bienvenues ! N'hésitez pas à soumettre des demandes de tirage ou à signaler des problèmes.
-License
-Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
+```
+
