@@ -14,7 +14,7 @@ Python 3.x
 Aucune bibliothèque externe n'est nécessaire pour ce projet.
 # Installation
 Clonez le dépôt :
-``git clone https://github.com/votre-utilisateur/blockchain-project.git
+``[git clone https://github.com/ClemEsaipProject/CryptoBC.git
 cd blockchain-project``
 
 (Facultatif) Créez un environnement virtuel :
