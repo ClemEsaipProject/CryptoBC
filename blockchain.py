@@ -56,10 +56,22 @@ class Blockchain:
         for block in self.chain:
             for transaction in block.transactions:
                 if transaction.id == transaction_id:
-                    transaction.amount *= 2  
+                    old_amount = transaction.amount
+                    transaction.amount *= 2
+                    new_amount = transaction.amount
+                    old_hash = block.hash
                     block.hash = block.calculate_hash()
+                    print(f"Transaction altérée :")
+                    print(f"ID : {transaction.id}")
+                    print(f"Ancien montant : {old_amount}")
+                    print(f"Nouveau montant : {new_amount}")
+                    print(f"Ancien hash du bloc : {old_hash}")
+                    print(f"Nouveau hash du bloc : {block.hash}")
                     return True
+        print(f"Transaction avec ID {transaction_id} non trouvée.")
         return False
+
+
 
     def is_chain_valid(self):
         for i in range(1, len(self.chain)):
