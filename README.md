@@ -32,7 +32,7 @@ Suivez les instructions à l'écran pour interagir avec la blockchain.
 
 *Structure du projet*
 ```
-blockchain-project/
+CryptoBC/
 │
 ├── main.py            # Point d'entrée du programme
 ├── blockchain.py      # Classe Blockchain et gestion des blocs
